@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaori Café · Cafeteria japonesa em Sorocaba</title>
+  <meta name="description" content="Kaori Café — cafeteria japonesa em Sorocaba com panificação própria: katsusando, bao, okonomiyaki, nikuman, choux cream, roll cake, bebidas com matcha e almoço executivo japonês.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/mascote.png">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Kaori Café — início">
+        <span class="logo__word">ka<span class="cup" aria-hidden="true"></span>ri</span>
+        <span class="logo__sub">CAFÉ</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#almoco">Almoço</a>
+        <a href="#galeria">Espaço</a>
+        <a href="#visite" class="btn btn--small">Como chegar</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow"><span class="jp">日本のカフェ</span> · Sorocaba</p>
+          <h1 class="display">
+            Um pedacinho<br>do <em>Japão</em><br>em Sorocaba.
+          </h1>
+          <p class="lead">
+            Café e cappuccino feitos com carinho, panificação própria e aquele toque
+            especial da comida japonesa — tudo fresquinho e preparado na hora.
+          </p>
+          <div class="hero__actions">
+            <a href="#cardapio" class="btn">Ver cardápio</a>
+            <a href="#visite" class="btn btn--ghost">Como chegar</a>
+          </div>
+          <p class="status" id="openStatus" aria-live="polite">
+            <span class="status__dot"></span><span class="status__text">Ter a dom · 8h às 20h</span>
+          </p>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="slats" aria-hidden="true"></div>
+          <figure class="arch">
+            <img src="assets/fachada-noite.png" alt="Fachada do Kaori Café à noite, com letreiro iluminado sobre ripas de madeira" width="383" height="510">
+          </figure>
+          <p class="tategaki" aria-hidden="true">香りカフェ</p>
+          <div class="badge" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs>
+                <path id="circ" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/>
+              </defs>
+              <text><textPath href="#circ" textLength="470">KAORI CAFÉ ✦ 香りカフェ ✦ SOROCABA ✦ </textPath></text>
+            </svg>
+            <span class="badge__cup"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-label="Destaques do cardápio">
+      <div class="marquee__track">
+        <span><b>カツサンド</b> Katsusando</span><i>✦</i>
+        <span><b>バオ</b> Bao</span><i>✦</i>
+        <span><b>お好み焼き</b> Okonomiyaki</span><i>✦</i>
+        <span><b>肉まん</b> Nikuman</span><i>✦</i>
+        <span><b>抹茶</b> Matcha</span><i>✦</i>
+        <span><b>食パン</b> Shokupan</span><i>✦</i>
+        <span><b>シュークリーム</b> Choux cream</span><i>✦</i>
+        <span><b>ロールケーキ</b> Roll cake</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="frame">
+            <img src="assets/letreiro.png" alt="Letreiro iluminado Kaori Café na parede de ripas de madeira" width="417" height="479" loading="lazy">
+          </div>
+          <img class="sticker" src="assets/mascote.png" alt="" width="225" height="225" loading="lazy">
+        </div>
+
+        <div class="about__text reveal">
+          <p class="eyebrow"><span class="jp">私たちについて</span> · Sobre nós</p>
+          <div class="kanji-title">
+            <span class="kanji" lang="ja">香り</span>
+            <div>
+              <p class="kanji-title__read">kaori</p>
+              <p class="kanji-title__mean">“aroma”, em japonês</p>
+            </div>
+          </div>
+          <h2 class="h2">Uma cafeteria inspirada no Japão, com sabores que surpreendem.</h2>
+          <p>
+            O Kaori chegou trazendo itens exclusivos inspirados nas cafeterias japonesas.
+            Da nossa confeitaria saem doces e salgados como o choux cream e o roll cake;
+            da cozinha, clássicos como okonomiyaki, bao e nikuman. Para o café da manhã,
+            um lanche à tarde ou para matar a fome no dia a dia.
+          </p>
+
+          <ul class="pillars">
+            <li>
+              <span class="pillars__icon" lang="ja">焼</span>
+              <div><strong>Panificação própria</strong><span>Shokupan e pães no vapor feitos aqui.</span></div>
+            </li>
+            <li>
+              <span class="pillars__icon" lang="ja">手</span>
+              <div><strong>Preparado na hora</strong><span>Tudo fresquinho, feito com carinho.</span></div>
+            </li>
+            <li>
+              <span class="pillars__icon" lang="ja">車</span>
+              <div><strong>Estacionamento</strong><span>Vagas em frente à cafeteria.</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARDÁPIO ========== -->
+    <section class="section menu" id="cardapio">
+      <div class="menu__pattern" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="jp">お品書き</span> · Cardápio</p>
+          <h2 class="h2">Do shokupan ao matcha.</h2>
+          <p class="muted">Pratos de R$ 18 a R$ 60 · consulte os preços e os itens do dia no balcão.</p>
+        </header>
+
+        <div class="tabs reveal" role="tablist" aria-label="Categorias do cardápio">
+          <button role="tab" aria-selected="true"  aria-controls="tab-salgados" id="t-salgados" class="tab">Salgados &amp; pães</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-doces"    id="t-doces"    class="tab" tabindex="-1">Doces</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-bebidas"  id="t-bebidas"  class="tab" tabindex="-1">Bebidas</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="tab-salgados" aria-labelledby="t-salgados">
+          <article class="dish dish--feature">
+            <span class="dish__jp" lang="ja">カツサンド</span>
+            <h3>Katsusando</h3>
+            <p>Shokupan fofinho recheado com mignon suíno empanado e molho especial.</p>
+            <span class="tag">Destaque da casa</span>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">バオ</span>
+            <h3>Bao</h3>
+            <p>Pãozinho asiático no vapor, macio, com recheios variados.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">お好み焼き</span>
+            <h3>Okonomiyaki</h3>
+            <p>Panqueca japonesa agridoce, servida com maionese kewpie e bacon.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">肉まん</span>
+            <h3>Nikuman</h3>
+            <p>Pão no vapor de massa macia com recheio de carne.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">ピザまん</span>
+            <h3>Pizzaman</h3>
+            <p>A versão do nikuman no sabor pizza — conhecida pela maciez.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">食パン</span>
+            <h3>Shokupan</h3>
+            <p>O pão de forma japonês mais amado: leve, alto e fofinho.</p>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="tab-doces" aria-labelledby="t-doces" hidden>
+          <article class="dish dish--feature">
+            <span class="dish__jp" lang="ja">シュークリーム</span>
+            <h3>Choux cream</h3>
+            <p>Massa choux leve e crocante, recheada de creme.</p>
+            <span class="tag">Da confeitaria</span>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">ロールケーキ</span>
+            <h3>Roll cake</h3>
+            <p>Pão de ló japonês enrolado, macio e delicado.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">和菓子</span>
+            <h3>Doces japoneses</h3>
+            <p>Seleção de doces tradicionais que muda conforme o dia.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">ケーキ</span>
+            <h3>Bolos</h3>
+            <p>Bolos da casa para acompanhar o café.</p>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="tab-bebidas" aria-labelledby="t-bebidas" hidden>
+          <article class="dish dish--feature dish--matcha">
+            <span class="dish__jp" lang="ja">抹茶</span>
+            <h3>Bebidas com matcha</h3>
+            <p>Lattes e criações à base de matcha, de dar água na boca.</p>
+            <span class="tag">Favorito</span>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">コーヒー</span>
+            <h3>Café</h3>
+            <p>Café coado e espresso, feitos com carinho.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">カプチーノ</span>
+            <h3>Cappuccino</h3>
+            <p>Cremoso, na medida certa para a tarde.</p>
+          </article>
+          <article class="dish">
+            <span class="dish__jp" lang="ja">ソフト</span>
+            <h3>Soft</h3>
+            <p>Sorvete soft para fechar com leveza.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALMOÇO ========== -->
+    <section class="lunch" id="almoco">
+      <div class="container lunch__grid">
+        <div class="lunch__text reveal">
+          <p class="eyebrow eyebrow--light"><span class="jp">定食</span> · Teishoku</p>
+          <h2 class="h2">Almoço executivo japonês.</h2>
+          <p>
+            O jeito japonês de almoçar: um prato principal acompanhado de arroz,
+            missoshiru e pequenos acompanhamentos, tudo servido junto em uma bandeja.
+          </p>
+          <ul class="lunch__list">
+            <li><span lang="ja">ご飯</span> Arroz japonês</li>
+            <li><span lang="ja">味噌汁</span> Missoshiru</li>
+            <li><span lang="ja">小鉢</span> Acompanhamentos</li>
+          </ul>
+          <a href="https://www.instagram.com/kaoricafe.br/" class="btn btn--light" target="_blank" rel="noopener">Ver o prato do dia no Instagram</a>
+        </div>
+        <figure class="lunch__photo reveal">
+          <img src="assets/fachada-dia.webp" alt="Fachada do Kaori Café durante o dia, com painel anunciando o almoço executivo japonês" width="680" height="510" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="jp">空間</span> · O espaço</p>
+          <h2 class="h2">Lindo, acolhedor e pronto para a sua foto.</h2>
+        </header>
+        <div class="gallery__grid">
+          <figure class="g g--tall reveal"><img src="assets/fachada-noite.png" alt="Kaori Café à noite com vasos iluminados" loading="lazy"></figure>
+          <figure class="g g--wide reveal"><img src="assets/fachada-dia.webp" alt="Fachada de dia com jardim e banners" loading="lazy"></figure>
+          <figure class="g reveal"><img src="assets/letreiro.png" alt="Cliente posando ao lado do letreiro" loading="lazy"></figure>
+          <a class="g g--insta reveal" href="https://www.instagram.com/kaoricafe.br/" target="_blank" rel="noopener">
+            <span class="g--insta__jp" lang="ja">フォロー</span>
+            <span class="g--insta__handle">@kaoricafe.br</span>
+            <span class="g--insta__cta">Siga no Instagram →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVALIAÇÕES ========== -->
+    <section class="section reviews">
+      <div class="container reviews__grid">
+        <div class="score reveal">
+          <span class="score__num">4,4</span>
+          <span class="stars" aria-label="4,4 de 5 estrelas"><span style="--r:4.4"></span></span>
+          <span class="muted">103 avaliações no Google</span>
+        </div>
+        <blockquote class="quote reveal">
+          <p>“Fui bem atendida… comida e bebida atenderam as minhas expectativas.”</p>
+          <cite>Lu · Google</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“Tem lanches, bolos e uns doces japonês muito gostosos.”</p>
+          <cite>Zelia · Google</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ========== VISITE ========== -->
+    <section class="section visit" id="visite">
+      <div class="container visit__grid">
+        <div class="visit__info reveal">
+          <p class="eyebrow"><span class="jp">アクセス</span> · Visite</p>
+          <h2 class="h2">Pé da Barão de Tatuí.</h2>
+
+          <dl class="info">
+            <div>
+              <dt>Endereço</dt>
+              <dd>Rua Perdizes, 18 — Jardim Paulistano<br>Sorocaba · SP · 18040-720</dd>
+            </div>
+            <div>
+              <dt>Estacionamento</dt>
+              <dd>Em frente à cafeteria</dd>
+            </div>
+          </dl>
+
+          <table class="hours" aria-label="Horário de funcionamento">
+            <tbody>
+              <tr data-day="1"><th>Segunda</th><td>Fechado</td></tr>
+              <tr data-day="2"><th>Terça</th><td>8h – 20h</td></tr>
+              <tr data-day="3"><th>Quarta</th><td>8h – 20h</td></tr>
+              <tr data-day="4"><th>Quinta</th><td>8h – 20h</td></tr>
+              <tr data-day="5"><th>Sexta</th><td>8h – 20h</td></tr>
+              <tr data-day="6"><th>Sábado</th><td>8h – 20h</td></tr>
+              <tr data-day="0"><th>Domingo</th><td>8h – 20h</td></tr>
+            </tbody>
+          </table>
+
+          <div class="hero__actions">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kaori+Caf%C3%A9+Rua+Perdizes+18+Sorocaba" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/kaoricafe.br/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <div class="visit__map reveal">
+          <iframe
+            title="Mapa: Kaori Café, Rua Perdizes, 18, Sorocaba"
+            src="https://www.google.com/maps?q=Rua+Perdizes,+18+-+Jardim+Paulistano,+Sorocaba+-+SP,+18040-720&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__noren" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="logo logo--light">
+          <span class="logo__word">ka<span class="cup" aria-hidden="true"></span>ri</span>
+          <span class="logo__sub">CAFÉ</span>
+        </span>
+        <p>Nova cafeteria japonesa de Sorocaba.</p>
+      </div>
+      <img class="footer__mascot" src="assets/mascote.png" alt="Mascote do Kaori Café" width="96" height="96" loading="lazy">
+      <div class="footer__meta">
+        <p lang="ja" class="footer__thanks">ありがとう</p>
+        <p>Rua Perdizes, 18 · Jd. Paulistano · Sorocaba</p>
+        <p>© <span id="year">2026</span> Kaori Café</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

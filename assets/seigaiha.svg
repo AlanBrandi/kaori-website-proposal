@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 40 20">
+  <defs>
+    <g id="s">
+      <circle r="20" fill="#FBF4EA"/>
+      <g fill="none" stroke="#3D6DB3" stroke-opacity=".22" stroke-width=".9">
+        <circle r="19"/><circle r="14.5"/><circle r="10"/><circle r="5.5"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#s" x="20" y="0"/>
+  <use href="#s" x="0" y="10"/>
+  <use href="#s" x="40" y="10"/>
+  <use href="#s" x="20" y="20"/>
+  <use href="#s" x="0" y="30"/>
+  <use href="#s" x="40" y="30"/>
+</svg>
